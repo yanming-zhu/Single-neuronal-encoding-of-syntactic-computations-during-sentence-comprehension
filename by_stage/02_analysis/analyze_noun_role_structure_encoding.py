@@ -1,0 +1,1 @@
+../../scripts/analyze_noun_role_structure_encoding.py

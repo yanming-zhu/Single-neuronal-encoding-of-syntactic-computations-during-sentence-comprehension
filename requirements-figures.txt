@@ -1,0 +1,9 @@
+-r requirements-analysis.txt
+# The Venn script uses the 0.11.x geometry API.
+matplotlib-venn==0.11.10
+# PDF assembly versions available in the verification runtime.
+pypdf==6.10.0
+pypdfium2==5.13.0
+# Optional cortical-surface figures; these are not a historical environment lock.
+nibabel
+nilearn

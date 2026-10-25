@@ -1,0 +1,61 @@
+{
+  "author": "Yanming Zhu",
+  "license": "MIT",
+  "analysis_date": "2026-08-07",
+  "status": "post-result, Introduction-driven exploratory analysis with frozen specifications",
+  "conceptual_estimand": "a shared neural transformation from sentence-initial NP to post-marker NP across matched Agent and Patient nouns",
+  "primary_unit_set": "good_only",
+  "sensitivity_unit_set": "usable_lenient",
+  "patients_are_independent_units": true,
+  "expected_patients": 5,
+  "artifact_threshold": 0.2,
+  "artifact_policy": "apply the threshold only to runs with an available annotation table and require a complete 20-noun matched set after filtering",
+  "primary_response": "mean 0-800 ms firing rate minus the -500-0 ms baseline, aligned to target-noun onset",
+  "position_orientation": "post-marker NP minus sentence-initial NP",
+  "outer_cross_validation": "leave one complete sentence pair out; train on one thematic-role class and test the other",
+  "parallelism_score": "cosine between training-set Agent and Patient position-difference vectors after training-only unit standardization",
+  "ccgp_decoder": "training-only standardized nearest-centroid position axis",
+  "stimulus_null": "all 2^10 synchronized within-pair position-label swaps, shared across roles, runs and patients",
+  "patient_inference": "patient-equal exhaustive exact sign flip",
+  "fixed_time_windows_ms": [[0, 200], [200, 500], [500, 800]],
+  "continuous_time_grid_ms": [-200, 800, 5],
+  "continuous_time_axis_fit": "fit the position axis only from the frozen 0-800 ms training response and project held-out cross-role 5-ms activity",
+  "legacy_timepoint_rule": {
+    "minimum_duration_ms_exclusive": 5,
+    "point_alpha": 0.0125,
+    "definition": "p < 0.05 / 4 and duration > 5 ms",
+    "additional_control": "patient-level exact max-statistic across the full continuous time grid"
+  },
+  "acoustic_window_ms": 250,
+  "acoustic_features": [
+    "log RMS",
+    "spectral centroid",
+    "zero-crossing rate",
+    "autocorrelation F0",
+    "voiced-frame fraction",
+    "envelope-derived chunk duration"
+  ],
+  "control_models": [
+    "baseline-corrected primary",
+    "cross-fitted acoustic residualization",
+    "cross-fitted acoustic plus serial-onset residualization",
+    "pre-noun baseline negative control"
+  ],
+  "ridge_alpha_grid": [0.1, 1.0, 10.0, 100.0, 1000.0],
+  "unit_contribution": {
+    "weights": "training-fold standardized centroid-axis loadings",
+    "summary": ["fold cosine stability", "participation ratio", "Gini", "90% energy unit count"],
+    "ablation_fractions": [0.05, 0.1, 0.2],
+    "matched_random_draws": 100
+  },
+  "scrambled_analysis": "train the grammar position axis while leaving out the matched pair, then compare later-minus-earlier noun projection in the five recorded scrambled sentences",
+  "anchor_scope": "a target-noun position axis is identifiable only at target-noun alignment; marker- and verb-aligned sentence responses are integrated from the separately frozen event-anchor analysis and are not relabelled as noun position observations",
+  "multiplicity": "report the five prespecified modules jointly; no module is selected for significance",
+  "interpretation_limits": [
+    "surface position is confounded with serial time and preceding marker context",
+    "voice is confounded with function-word identity, acoustics and sentence form",
+    "Agent and Patient are confounded with animacy and lexical class",
+    "cross-role generalization does not identify hierarchical syntax over linear or local-context accounts",
+    "scrambled trials are sparse and do not provide an independent confirmatory dataset"
+  ]
+}

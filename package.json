@@ -1,0 +1,14 @@
+{
+  "name": "tan-analysis-supplementary-builders",
+  "version": "2026.10.4",
+  "private": true,
+  "description": "Optional Node dependencies for the historical supplementary base-layout builder",
+  "author": "Yanming Zhu",
+  "license": "MIT",
+  "engines": { "node": ">=20.9.0" },
+  "dependencies": {
+    "pptxgenjs": "4.0.1",
+    "sharp": "0.35.4",
+    "jszip": "3.10.1"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "author": "Yanming Zhu",
+  "license": "MIT",
+  "output": "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Supplementary_Figures_20260809/Tan_Manuscript_Supplementary_Figures_20260809.pptx",
+  "created_at": "2026-08-09",
+  "manuscript": "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Manuscript V1-lht(1).docx",
+  "main_figures": [
+    "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Fig1.pdf",
+    "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Fig2.pdf",
+    "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Fig3.pdf",
+    "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Fig4.pdf"
+  ],
+  "supplementary_figures": [
+    {
+      "number": "S1",
+      "title": "Syntactic analyses of matched Mandarin BA and BEI sentences",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Supplementary_Figures_20260809/assets/ba_tree.png",
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Supplementary_Figures_20260809/assets/bei_tree.png"
+      ]
+    },
+    {
+      "number": "S2",
+      "title": "Recording yield and analysis inclusion across sessions",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Supplementary_Figures_20260809/new_figures/S2_recording_yield_and_inclusion.png"
+      ]
+    },
+    {
+      "number": "S3",
+      "title": "Patient-resolved probe-coordinate boundary quality control",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/probe_tissue_boundary_candidates_20260730/figures/Fig_probe_boundary_candidates_all_patients.png"
+      ]
+    },
+    {
+      "number": "S4",
+      "title": "Time-resolved and cross-temporal construction decoding by run",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/nature_science_draft/supplementary/figures/supp_fig1_time_generalization.png"
+      ]
+    },
+    {
+      "number": "S5",
+      "title": "Population-decoder specification and inference sensitivity",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Supplementary_Figures_20260809/new_figures/S5_decoder_specification_and_inference.png"
+      ]
+    },
+    {
+      "number": "S6",
+      "title": "Population-information diagnostics",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Supplementary_Figures_20260809/new_figures/S6_population_information_diagnostics.png"
+      ]
+    },
+    {
+      "number": "S7",
+      "title": "Baseline-state controls for construction decoding",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/nature_science_draft/supplementary/figures/supp_fig4_baseline_state.png"
+      ]
+    },
+    {
+      "number": "S8",
+      "title": "Relative-depth and IED/artifact controls",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/nature_science_draft/supplementary/figures/supp_fig5_depth_artifact_controls.png"
+      ]
+    },
+    {
+      "number": "S9",
+      "title": "Population state-space and representational-geometry diagnostics",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/nature_science_draft/supplementary/figures/supp_fig3_state_space_rsa.png"
+      ]
+    },
+    {
+      "number": "S10",
+      "title": "Cross-session composition across six possible response archetypes",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/active_passive_go_style_interpretable_20260723/Fig_GO_style_interpretable_cluster_composition.png"
+      ]
+    },
+    {
+      "number": "S11",
+      "title": "Census and cross-noun-class replication of matched-noun slot effects",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/noun_slot_unit_analysis_20260723/figures/Fig_corrected_noun_slot_screen_summary.png",
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/noun_slot_unit_analysis_20260723/figures/Fig_corrected_noun_slot_noun_class_control.png"
+      ]
+    },
+    {
+      "number": "S12",
+      "title": "Matched-noun units preferring the sentence-initial slot",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/noun_slot_unit_analysis_20260723/figures/Fig_corrected_noun_slot_subject_gt_predicate_stacked_heatmap.png"
+      ]
+    },
+    {
+      "number": "S13",
+      "title": "Matched-noun units preferring the post-function-word slot",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/noun_slot_unit_analysis_20260723/figures/Fig_corrected_noun_slot_subject_lt_predicate_stacked_heatmap.png"
+      ]
+    },
+    {
+      "number": "S14",
+      "title": "Stimulus acoustics and design identifiability",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/manuscript/Supplementary_Figures_20260809/new_figures/S14_stimulus_acoustic_identifiability.png"
+      ]
+    },
+    {
+      "number": "S15",
+      "title": "Kimi layer, input-perturbation and neural controls for noun identity and position",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/fig4_extended_data_20260807/figures/ExtendedDataFig4_position_controls.png"
+      ]
+    },
+    {
+      "number": "S16",
+      "title": "Nested rank-4 alignment across estimators and unit specifications",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/active_passive_nested_regularized_alignment_20260807/figures/Fig_6_combined_unit_specification_comparison.png"
+      ]
+    },
+    {
+      "number": "S17",
+      "title": "Statistical-test sensitivity of the good-only rank-4 Procrustes result",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/active_passive_nested_regularized_alignment_20260807/figures/Fig_7_good_only_statistical_test_sensitivity.png"
+      ]
+    },
+    {
+      "number": "S18",
+      "title": "Validation and estimability limits of the structural-position analysis",
+      "source_assets": [
+        "/Users/yanming/Desktop/SHTech/科研项目/Tan/reports/intro_driven_structural_transformation_20260807/figures/Extended_Data_Fig_9_validation_sensitivity.png"
+      ]
+    }
+  ]
+}

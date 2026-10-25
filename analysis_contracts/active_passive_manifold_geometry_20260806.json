@@ -1,0 +1,59 @@
+{
+  "author": "Yanming Zhu",
+  "license": "MIT",
+  "analysis_date": "2026-08-06",
+  "status": "post-result exploratory literature-motivated analysis",
+  "unit_set": "good_only",
+  "artifact_threshold": 0.2,
+  "intrinsic_dimension": "participation ratio of role-centered full-data spectra",
+  "shared_spectrum": "squared singular-value spectrum of rank-8 cross-view covariance",
+  "dimension_unit_splits": 500,
+  "static_models": [
+    "orthogonal Procrustes",
+    "two-view PLS"
+  ],
+  "latent_ranks": [
+    2,
+    4
+  ],
+  "outer_cv": "leave two complete sentence pairs out",
+  "procrustes_permutations": 500,
+  "dynamic_model": "two-view PLS rank 2",
+  "dynamic_windows_ms": [
+    [
+      0,
+      100
+    ],
+    [
+      100,
+      200
+    ],
+    [
+      200,
+      300
+    ],
+    [
+      300,
+      400
+    ],
+    [
+      400,
+      500
+    ],
+    [
+      500,
+      600
+    ],
+    [
+      600,
+      700
+    ],
+    [
+      700,
+      800
+    ]
+  ],
+  "dynamic_multiple_comparison": "patient exact max-stat across 64 cells",
+  "patient_inference": "patient-equal exhaustive sign flip",
+  "interpretation_limit": "condition confounded with marker/acoustics/position/form; role with animacy/lexical class"
+}

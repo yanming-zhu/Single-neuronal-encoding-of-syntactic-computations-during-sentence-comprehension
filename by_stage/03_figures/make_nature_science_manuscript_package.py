@@ -1,0 +1,1 @@
+../../scripts/make_nature_science_manuscript_package.py

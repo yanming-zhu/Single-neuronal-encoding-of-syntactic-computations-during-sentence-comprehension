@@ -1,0 +1,1 @@
+../../scripts/extract_noun_firstchar_kimi.py

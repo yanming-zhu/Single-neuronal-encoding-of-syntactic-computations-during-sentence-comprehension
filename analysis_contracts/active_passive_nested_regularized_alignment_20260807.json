@@ -1,0 +1,42 @@
+{
+  "author": "Yanming Zhu",
+  "license": "MIT",
+  "analysis_date": "2026-08-07",
+  "status": "post-result exploratory method benchmark",
+  "unit_set": "good_only",
+  "artifact_threshold": 0.2,
+  "anchor": "target-noun onset",
+  "response_window_ms": [
+    0,
+    800
+  ],
+  "latent_rank": 4,
+  "primary_endpoint": "held-pair retrieval margin",
+  "methods": [
+    "original_procrustes",
+    "noise_whitened_procrustes",
+    "regularized_pls"
+  ],
+  "outer_cv": "leave two complete sentence pairs out (45 folds per run)",
+  "inner_cv": "leave two complete sentence pairs out within each outer training set (28 folds)",
+  "whitening_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "pls_spectral_shrinkage_grid": [
+    0.0,
+    0.1,
+    0.3,
+    1.0,
+    3.0
+  ],
+  "selection_metric": "inner mean retrieval margin",
+  "tie_breaker": "larger shrinkage",
+  "baseline_noise": "-500 to 0 ms, 20-ms bins, within-trial temporal residuals",
+  "patient_inference": "patient-equal exhaustive sign flip",
+  "multiple_comparison": "single-step studentized patient max-T across three methods",
+  "interpretation_limit": "condition confounded with marker/acoustics/position/form; role with animacy/lexical class"
+}

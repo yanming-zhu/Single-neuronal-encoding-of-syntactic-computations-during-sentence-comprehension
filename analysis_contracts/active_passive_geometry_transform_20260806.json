@@ -1,0 +1,44 @@
+{
+  "author": "Yanming Zhu",
+  "license": "MIT",
+  "analysis_date": "2026-08-06",
+  "status": "post-result exploratory literature-motivated analysis",
+  "estimand": "same-noun active-to-passive geometry with thematic role held fixed",
+  "unit_set": "good_only",
+  "metric": "response_baseline_corrected_hz",
+  "artifact_threshold": 0.2,
+  "artifact_policy": "threshold applied only to runs with available annotations",
+  "roles": [
+    "agent",
+    "patient"
+  ],
+  "windows_ms": [
+    [
+      0,
+      200
+    ],
+    [
+      200,
+      400
+    ],
+    [
+      400,
+      600
+    ],
+    [
+      600,
+      800
+    ]
+  ],
+  "primary_rank": 4,
+  "sensitivity_rank": 2,
+  "outer_cv": "leave two complete sentence pairs out",
+  "primary_geometry": "role-stratified cosine RDM Spearman correlation, Fisher-z role equal",
+  "primary_transform": "rank-4 orthogonal Procrustes, within-role 2-vs-2 retrieval",
+  "patient_inference": "patient-equal exhaustive exact sign flip",
+  "item_inference": "synchronized sentence-pair block permutation across runs and patients",
+  "n_rdm_permutations": 5000,
+  "n_transform_permutations": 500,
+  "n_bootstrap": 10000,
+  "interpretation_limit": "voice is confounded with function-word identity and acoustics; role is confounded with animacy and lexical class"
+}

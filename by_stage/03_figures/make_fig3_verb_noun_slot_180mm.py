@@ -1,0 +1,1 @@
+../../scripts/make_fig3_verb_noun_slot_180mm.py

@@ -1,0 +1,61 @@
+{
+  "author": "Yanming Zhu",
+  "license": "MIT",
+  "analysis_date": "2026-08-06",
+  "status": "post-result exploratory literature-motivated analysis",
+  "unit_set": "good_only",
+  "artifact_threshold": 0.2,
+  "estimand": "same-noun same-role active/passive shared latent and local geometry",
+  "primary_latent_rank": 2,
+  "sensitivity_latent_rank": 4,
+  "pre_pca_rank": 8,
+  "outer_cv": "leave two complete sentence pairs out",
+  "primary_pls_endpoint": "within-role held-pair retrieval margin",
+  "local_endpoints": [
+    "triplet_consistency",
+    "2-nearest-neighbor overlap"
+  ],
+  "dynamic_windows_ms": [
+    [
+      0,
+      100
+    ],
+    [
+      100,
+      200
+    ],
+    [
+      200,
+      300
+    ],
+    [
+      300,
+      400
+    ],
+    [
+      400,
+      500
+    ],
+    [
+      500,
+      600
+    ],
+    [
+      600,
+      700
+    ],
+    [
+      700,
+      800
+    ]
+  ],
+  "n_pls_permutations": 500,
+  "n_local_permutations": 5000,
+  "n_unit_tuning_permutations": 5000,
+  "n_axis_permutations": 5000,
+  "n_unit_splits": 1000,
+  "n_bootstrap": 10000,
+  "patient_inference": "patient-equal exhaustive sign flip",
+  "item_inference": "synchronized 10-pair permutation across all runs/patients/roles",
+  "interpretation_limit": "condition is confounded with marker/acoustics/position/form; role with animacy/lexical class"
+}

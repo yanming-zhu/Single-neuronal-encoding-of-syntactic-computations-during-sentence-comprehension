@@ -1,0 +1,1 @@
+../../scripts/detect_ap_artifacts_1000hz_gz004.py

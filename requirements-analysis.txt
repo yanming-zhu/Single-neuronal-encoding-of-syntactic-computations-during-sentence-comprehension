@@ -1,0 +1,9 @@
+# Core analysis environment exercised on 2026-10-04 with Python 3.10.18.
+# This is not a reconstruction of every historical Kilosort or MLX environment.
+numpy==1.26.4
+pandas==2.3.1
+scipy==1.15.3
+matplotlib==3.10.0
+scikit-learn==1.7.1
+Pillow==11.3.0
+networkx==3.4.2

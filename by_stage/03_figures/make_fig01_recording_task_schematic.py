@@ -1,0 +1,1 @@
+../../scripts/make_fig01_recording_task_schematic.py

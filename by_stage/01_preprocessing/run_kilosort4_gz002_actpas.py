@@ -1,0 +1,1 @@
+../../scripts/run_kilosort4_gz002_actpas.py

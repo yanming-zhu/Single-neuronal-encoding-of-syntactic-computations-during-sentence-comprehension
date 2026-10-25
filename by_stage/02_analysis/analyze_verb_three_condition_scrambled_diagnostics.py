@@ -1,0 +1,1 @@
+../../scripts/analyze_verb_three_condition_scrambled_diagnostics.py
